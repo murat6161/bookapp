@@ -12,7 +12,7 @@ const BookList = (props) => {
          
                 <div className="col-lg-4" key={book.ISBN}>
                     <div className="card mb-4 shadow-sm">
-                        <img src="..." alt="Sample Book" className="card-img-top"/>
+                        <img src={book.image} alt="Sample Book" className="card-img-top"/>
                         <div className="card-body">
                             <h3 className="card-title">{book.name}</h3>
                              <p className="card-text">{book.author}</p>
