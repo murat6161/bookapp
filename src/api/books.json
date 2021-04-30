@@ -1,43 +1,7 @@
 {
   "books": [
     {
-      "url": "http://www.nytimes.com/2011/10/31/books/stephen-kings-11-23-63-review.html",
-      "publication_dt": "2011-10-31",
-      "byline": "JANET MASLIN",
-      "book_title": "11/22/63",
-      "book_author": "Stephen King",
-      "summary": "Stephen King’s latest novel, “11/22/63,” tells of a schoolteacher who travels back to 1958 to alter history, and falls in love as well.",
-      "uuid": "00000000-0000-0000-0000-000000000000",
-      "uri": "nyt://book/00000000-0000-0000-0000-000000000000",
-      "isbn13": [
-        "9780307951434",
-        "9780606351461",
-        "9781442344280",
-        "9781442344303",
-        "9781442391635",
-        "9781444727326",
-        "9781451627282",
-        "9781451627299",
-        "9781451627305",
-        "9781451651645",
-        "9781501120602",
-        "9781594135590"
-      ]
-    },
-    {
-      "url": "http://www.nytimes.com/2004/01/04/books/the-quest-for-the-north-central-positronics.html",
-      "publication_dt": "2004-01-04",
-      "byline": "ANDREW O'HEHIR",
-      "book_title": "Wolves of the Calla",
-      "book_author": "Stephen King",
-      "summary": "",
-      "uuid": "00000000-0000-0000-0000-000000000000",
-      "uri": "nyt://book/00000000-0000-0000-0000-000000000000",
-      "isbn13": [
-        "9781848941137"
-      ]
-    },
-    {
+      "id": "3",
       "url": "http://www.nytimes.com/1993/10/24/books/in-short-fiction-284093.html",
       "publication_dt": "1993-10-24",
       "byline": "RICHARD E. NICHOLLS",
@@ -51,6 +15,7 @@
       ]
     },
     {
+      "id": "4",
       "url": "http://www.nytimes.com/2001/11/04/books/books-in-brief-fiction-poetry-851302.html",
       "publication_dt": "2001-11-04",
       "byline": "MARY ELIZABETH WILLIAMS",
@@ -64,19 +29,7 @@
       ]
     },
     {
-      "url": "http://www.nytimes.com/1990/05/13/books/armageddon-complete-and-uncut.html",
-      "publication_dt": "1990-05-13",
-      "byline": "ROBERT KIELY",
-      "book_title": "The Stand",
-      "book_author": "Stephen King",
-      "summary": "",
-      "uuid": "00000000-0000-0000-0000-000000000000",
-      "uri": "nyt://book/00000000-0000-0000-0000-000000000000",
-      "isbn13": [
-        "9781848940833"
-      ]
-    },
-    {
+      "id": "5",
       "url": "http://www.nytimes.com/1990/09/02/books/scared-but-safe.html",
       "publication_dt": "1990-09-02",
       "byline": "ANDY SOLOMON",
@@ -90,6 +43,7 @@
       ]
     },
     {
+      "id": "6",
       "url": "http://www.nytimes.com/1991/10/20/books/l-defending-stephen-king-075091.html",
       "publication_dt": "1991-10-20",
       "byline": "",
@@ -103,6 +57,7 @@
       ]
     },
     {
+      "id": "7",
       "url": "http://www.nytimes.com/1992/06/29/books/books-of-the-times-to-be-read-in-daylight-away-from-hungry-dogs.html",
       "publication_dt": "1992-06-29",
       "byline": "CHRISTOPHER LEHMANN-HAUPT",
@@ -116,6 +71,7 @@
       ]
     },
     {
+      "id": "8",
       "url": "http://www.nytimes.com/2002/04/14/books/the-horror-etc.html",
       "publication_dt": "2002-04-14",
       "byline": "WALTER KIRN",
@@ -129,6 +85,7 @@
       ]
     },
     {
+      "id": "9",
       "url": "http://www.nytimes.com/1986/08/21/books/books-of-the-times-547486.html",
       "publication_dt": "1986-08-21",
       "byline": "CHRISTOPHER LEHMANN-HAUPT",
@@ -142,6 +99,7 @@
       ]
     },
     {
+      "id": "10",
       "url": "http://www.nytimes.com/2010/11/28/books/review/Rafferty-t.html",
       "publication_dt": "2010-11-28",
       "byline": "TERRENCE RAFFERTY",
@@ -162,6 +120,7 @@
       ]
     },
     {
+      "id": "11",
       "url": "http://www.nytimes.com/1998/09/27/books/familiar-terrors.html",
       "publication_dt": "1998-09-27",
       "byline": "DANIEL MENDELSOHN",
@@ -175,6 +134,7 @@
       ]
     },
     {
+      "id": "12",
       "url": "http://www.nytimes.com/2002/03/18/books/books-of-the-times-storytelling-mogul-decides-to-sweep-out-odds-and-ends.html",
       "publication_dt": "2002-03-18",
       "byline": "JANET MASLIN",
@@ -188,6 +148,7 @@
       ]
     },
     {
+      "id": "13",
       "url": "http://www.nytimes.com/1995/07/02/books/in-short-fiction-077895.html",
       "publication_dt": "1995-07-02",
       "byline": "RICHARD E. NICHOLLS",
@@ -201,6 +162,7 @@
       ]
     },
     {
+      "id": "14",
       "url": "http://www.nytimes.com/2013/09/16/books/doctor-sleep-is-stephen-kings-sequel-to-the-shining.html",
       "publication_dt": "2013-09-16",
       "byline": "JANET MASLIN",
@@ -214,19 +176,7 @@
       ]
     },
     {
-      "url": "http://www.nytimes.com/2013/09/22/books/review/stephen-kings-shining-sequel-doctor-sleep.html",
-      "publication_dt": "2013-09-22",
-      "byline": "MARGARET ATWOOD",
-      "book_title": "Doctor Sleep",
-      "book_author": "Stephen King",
-      "summary": "“Doctor Sleep” picks up the story of Danny, the little boy with psycho-intuitive powers from Stephen King’s 1977 novel “The Shining.”",
-      "uuid": "00000000-0000-0000-0000-000000000000",
-      "uri": "nyt://book/00000000-0000-0000-0000-000000000000",
-      "isbn13": [
-        "9781451698855"
-      ]
-    },
-    {
+      "id": "16",
       "url": "http://www.nytimes.com/2013/06/23/books/review/joyland-by-stephen-king.html",
       "publication_dt": "2013-06-23",
       "byline": "WALTER KIRN",
@@ -240,6 +190,7 @@
       ]
     },
     {
+      "id": "17",
       "url": "http://www.nytimes.com/2009/11/08/books/review/JParker-t.html",
       "publication_dt": "2009-11-08",
       "byline": "JAMES PARKER",
@@ -253,6 +204,7 @@
       ]
     },
     {
+      "id": "18",
       "url": "http://www.nytimes.com/2009/11/12/books/12book.html",
       "publication_dt": "2009-11-12",
       "byline": "JANET MASLIN",
@@ -266,6 +218,7 @@
       ]
     },
     {
+      "id": "19",
       "url": "http://www.nytimes.com/2014/11/14/books/stephen-kings-revival.html",
       "publication_dt": "2014-11-14",
       "byline": "JANET MASLIN",
@@ -284,6 +237,7 @@
       ]
     },
     {
+      "id": "20",
       "url": "http://www.nytimes.com/2014/11/23/books/review/stephen-kings-revival.html",
       "publication_dt": "2014-11-23",
       "byline": "DANIELLE TRUSSONI",
@@ -302,6 +256,7 @@
       ]
     },
     {
+      "id": "21",
       "url": "http://www.nytimes.com/2006/11/12/books/review/Windolf.t.html",
       "publication_dt": "2006-11-12",
       "byline": "JIM WINDOLF",
@@ -315,6 +270,7 @@
       ]
     },
     {
+      "id": "22",
       "url": "http://www.nytimes.com/2008/11/05/books/05masl.html",
       "publication_dt": "2008-11-05",
       "byline": "JANET MASLIN",
@@ -328,6 +284,7 @@
       ]
     },
     {
+      "id": "23",
       "url": "http://www.nytimes.com/2008/11/23/books/review/Taylor-t.html",
       "publication_dt": "2008-11-23",
       "byline": "CHARLES TAYLOR",
@@ -341,6 +298,7 @@
       ]
     },
     {
+      "id": "24",
       "url": "http://www.nytimes.com/2008/01/21/books/21maslin.html",
       "publication_dt": "2008-01-21",
       "byline": "JANET MASLIN",
@@ -354,6 +312,7 @@
       ]
     },
     {
+      "id": "25",
       "url": "http://www.nytimes.com/2008/03/02/books/review/Campbell-t.html",
       "publication_dt": "2008-03-02",
       "byline": "JAMES CAMPBELL",
@@ -367,6 +326,7 @@
       ]
     },
     {
+      "id": "26",
       "url": "http://www.nytimes.com/2006/10/23/books/23masl.html",
       "publication_dt": "2006-10-23",
       "byline": "JANET MASLIN",
@@ -380,6 +340,7 @@
       ]
     },
     {
+      "id": "27",
       "url": "http://www.nytimes.com/2014/06/08/books/review/stephen-kings-mr-mercedes.html",
       "publication_dt": "2014-06-08",
       "byline": "MEGAN ABBOTT",
@@ -400,6 +361,7 @@
       ]
     },
     {
+      "id": "28",
       "url": "http://www.nytimes.com/1981/05/10/books/scare-tactics.html",
       "publication_dt": "1981-05-10",
       "byline": "MICHELE SLUNG",
@@ -413,6 +375,7 @@
       ]
     },
     {
+      "id": "29",
       "url": "http://www.nytimes.com/1981/08/14/books/books-of-the-times-books-of-the-times.html",
       "publication_dt": "1981-08-14",
       "byline": "",
@@ -426,6 +389,7 @@
       ]
     },
     {
+      "id": "30",
       "url": "http://www.nytimes.com/1982/08/11/books/books-of-the-times-074639.html",
       "publication_dt": "1982-08-11",
       "byline": "",
@@ -439,6 +403,7 @@
       ]
     },
     {
+      "id": "31",
       "url": "http://www.nytimes.com/1982/08/29/books/horror-writer-s-holiday.html",
       "publication_dt": "1982-08-29",
       "byline": "ALAN CHEUSE",
@@ -452,6 +417,7 @@
       ]
     },
     {
+      "id": "32",
       "url": "http://www.nytimes.com/1983/04/03/books/the-other-woman-was-a-car.html",
       "publication_dt": "1983-04-03",
       "byline": "PHILLIPE VAN RJNDT",
@@ -465,6 +431,7 @@
       ]
     },
     {
+      "id": "33",
       "url": "http://www.nytimes.com/1983/04/12/books/books-of-the-times-093019.html",
       "publication_dt": "1983-04-12",
       "byline": "",
@@ -478,6 +445,7 @@
       ]
     },
     {
+      "id": "34",
       "url": "http://www.nytimes.com/1983/10/21/books/books-of-the-times-243538.html",
       "publication_dt": "1983-10-21",
       "byline": "",
@@ -491,6 +459,7 @@
       ]
     },
     {
+      "id": "35",
       "url": "http://www.nytimes.com/1985/06/09/books/don-t-turn-your-back-on-this-book.html",
       "publication_dt": "1985-06-09",
       "byline": "SUSAN BOLOTIN",
@@ -501,6 +470,7 @@
       "uri": "nyt://book/00000000-0000-0000-0000-000000000000"
     },
     {
+      "id": "36",
       "url": "http://www.nytimes.com/1987/02/22/books/what-the-wicked-magician-did.html",
       "publication_dt": "1987-02-22",
       "byline": "BARBARA TRITEL",
@@ -511,6 +481,7 @@
       "uri": "nyt://book/00000000-0000-0000-0000-000000000000"
     },
     {
+      "id": "37",
       "url": "http://www.nytimes.com/1987/05/31/books/summer-reading-sheldon-gets-the-ax.html",
       "publication_dt": "1987-05-31",
       "byline": "JOHN KATZENBACH",
@@ -524,6 +495,7 @@
       ]
     },
     {
+      "id": "38",
       "url": "http://www.nytimes.com/1987/06/08/books/books-of-the-times-301987.html",
       "publication_dt": "1987-06-08",
       "byline": "",
@@ -537,6 +509,7 @@
       ]
     },
     {
+      "id": "39",
       "url": "http://www.nytimes.com/1987/11/05/books/books-of-the-times-950387.html",
       "publication_dt": "1987-11-05",
       "byline": "",
@@ -550,6 +523,7 @@
       ]
     },
     {
+      "id": "40",
       "url": "http://www.nytimes.com/1987/12/20/books/not-with-a-bang-but-an-eeeooooarrrhmm.html",
       "publication_dt": "1987-12-20",
       "byline": "NINA AUERBACH",
@@ -563,6 +537,7 @@
       ]
     },
     {
+      "id": "41",
       "url": "http://www.nytimes.com/1989/10/23/books/books-of-the-times-from-stephen-king-a-writer-s-demon.html",
       "publication_dt": "1989-10-23",
       "byline": "",
@@ -573,6 +548,7 @@
       "uri": "nyt://book/00000000-0000-0000-0000-000000000000"
     },
     {
+      "id": "42",
       "url": "http://www.nytimes.com/1989/10/29/books/his-alter-ego-is-a-killer.html",
       "publication_dt": "1989-10-29",
       "byline": "GEORGE STADE",
@@ -583,6 +559,7 @@
       "uri": "nyt://book/00000000-0000-0000-0000-000000000000"
     },
     {
+      "id": "43",
       "url": "http://www.nytimes.com/1991/09/29/books/avaunt-thee-recreant-cyborg.html",
       "publication_dt": "1991-09-29",
       "byline": "RICHARD E. NICHOLLS",
@@ -596,6 +573,7 @@
       ]
     },
     {
+      "id": "44",
       "url": "http://www.nytimes.com/1991/10/03/books/books-of-the-times-turning-favors-into-catastrophe.html",
       "publication_dt": "1991-10-03",
       "byline": "",
@@ -609,6 +587,7 @@
       ]
     },
     {
+      "id": "45",
       "url": "http://www.nytimes.com/1994/10/06/books/books-of-the-times-lack-of-sleep-the-least-of-his-problems.html",
       "publication_dt": "1994-10-06",
       "byline": "",
@@ -622,6 +601,7 @@
       ]
     },
     {
+      "id": "46",
       "url": "http://www.nytimes.com/1995/06/26/books/book-review-a-punch-in-the-nose-then-a-new-life-begins.html",
       "publication_dt": "1995-06-26",
       "byline": "",
@@ -635,6 +615,7 @@
       ]
     },
     {
+      "id": "47",
       "url": "http://www.nytimes.com/1998/09/21/books/books-of-the-times-death-terror-and-writer-s-block.html",
       "publication_dt": "1998-09-21",
       "byline": "",
@@ -648,6 +629,7 @@
       ]
     },
     {
+      "id": "48",
       "url": "http://www.nytimes.com/1999/04/15/books/books-of-the-times-a-modern-fairy-tale-of-the-dark-north-woods.html",
       "publication_dt": "1999-04-15",
       "byline": "",
@@ -661,6 +643,7 @@
       ]
     },
     {
+      "id": "49",
       "url": "http://www.nytimes.com/1999/05/16/books/books-in-brief-fiction-583618.html",
       "publication_dt": "1999-05-16",
       "byline": "ANDREW ESSEX",
@@ -674,6 +657,7 @@
       ]
     },
     {
+      "id": "50",
       "url": "http://www.nytimes.com/2000/10/05/books/books-of-the-times-how-to-write-if-you-re-stephen-king.html",
       "publication_dt": "2000-10-05",
       "byline": "JANET MASLIN",
@@ -702,6 +686,7 @@
       ]
     },
     {
+      "id": "51",
       "url": "http://www.nytimes.com/2000/10/08/books/making-it.html",
       "publication_dt": "2000-10-08",
       "byline": "FREDERICK BUSCH",
@@ -730,6 +715,7 @@
       ]
     },
     {
+      "id": "52",
       "url": "http://www.nytimes.com/2001/03/15/books/books-of-the-times-a-fateful-step-off-a-curb-and-into-alien-territory.html",
       "publication_dt": "2001-03-15",
       "byline": "JANET MASLIN",
@@ -743,6 +729,7 @@
       ]
     },
     {
+      "id": "53",
       "url": "http://www.nytimes.com/2001/04/15/books/weasel-from-another-planet.html",
       "publication_dt": "2001-04-15",
       "byline": "COLIN HARRISON",
@@ -756,6 +743,7 @@
       ]
     },
     {
+      "id": "54",
       "url": "http://www.nytimes.com/2002/09/23/books/books-of-the-times-cruising-the-dark-side-forget-about-seat-belts.html",
       "publication_dt": "2002-09-23",
       "byline": "JANET MASLIN",
@@ -769,6 +757,7 @@
       ]
     },
     {
+      "id": "55",
       "url": "http://www.nytimes.com/2002/09/29/books/not-your-father-s-roadmaster.html",
       "publication_dt": "2002-09-29",
       "byline": "LAURA MILLER",
@@ -782,6 +771,7 @@
       ]
     },
     {
+      "id": "56",
       "url": "http://www.nytimes.com/2004/06/20/books/books-in-brief-fiction-937851.html",
       "publication_dt": "2004-06-20",
       "byline": "BEN SISARIO",
@@ -795,6 +785,7 @@
       ]
     },
     {
+      "id": "57",
       "url": "http://www.nytimes.com/2006/01/23/books/23masl.html",
       "publication_dt": "2006-01-23",
       "byline": "JANET MASLIN",
@@ -808,6 +799,7 @@
       ]
     },
     {
+      "id": "58",
       "url": "http://www.nytimes.com/2006/02/05/books/review/05itzkoff.html",
       "publication_dt": "2006-02-05",
       "byline": "DAVE ITZKOFF",
@@ -821,6 +813,7 @@
       ]
     },
     {
+      "id": "59",
       "url": "http://www.nytimes.com/2015/05/31/books/review/stephen-kings-finders-keepers.html",
       "publication_dt": "2015-05-31",
       "byline": "LAURA LIPPMAN",
@@ -839,6 +832,7 @@
       ]
     },
     {
+      "id": "60",
       "url": "http://www.nytimes.com/2016/06/12/books/review/stephen-kings-end-of-watch.html",
       "publication_dt": "2016-06-12",
       "byline": "DENISE MINA",
@@ -856,6 +850,7 @@
       ]
     },
     {
+      "id": "61",
       "url": "https://www.nytimes.com/2018/05/22/books/review/outsider-stephen-king.html",
       "publication_dt": "2018-05-22",
       "byline": "VICTOR LAVALLE",
@@ -869,6 +864,7 @@
       ]
     },
     {
+      "id": "62",
       "url": "https://www.nytimes.com/2018/10/26/books/review/stephen-king-elevation.html",
       "publication_dt": "2018-10-26",
       "byline": "GILBERT CRUZ",
@@ -882,6 +878,7 @@
       ]
     },
     {
+      "id": "63",
       "url": "https://www.nytimes.com/2019/09/08/books/review-institute-stephen-king.html",
       "publication_dt": "2019-09-08",
       "byline": "DWIGHT GARNER",
@@ -895,6 +892,7 @@
       ]
     },
     {
+      "id": "64",
       "url": "https://www.nytimes.com/2019/09/10/books/review/stephen-king-the-institute.html",
       "publication_dt": "2019-09-10",
       "byline": "LAURA MILLER",
@@ -906,6 +904,14 @@
       "isbn13": [
         "9781982110567"
       ]
+    },
+    {
+      "book_title": "Veba Geceleri",
+      "author": "Orhan Pamuk",
+      "url": "https://www.dr.com.tr/Kitap/1984/Edebiyat/Roman/Dunya-Roman/urunno=0000000064038",
+      "publication_dt": "2021",
+      "summary": "Orhan Pamuk’un üzerinde 5 yıldır çalıştığı “Veba Geceleri”, 1901 yılında 3. Veba Pandemisi döneminde Osmanlı’nın 29. Vilayeti Minger adasında geçiyor.",
+      "id": "3wIUsTp"
     }
   ]
 }

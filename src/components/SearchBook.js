@@ -21,7 +21,7 @@ class SearchBook extends React.Component {
     return (
       <form onSubmit={this.formSubmit}>
         <div className="form-row mb-5">
-          <div className="col-6">
+          <div  className="col-6">
             Search Book
             <input
               onChange={this.props.findBookProp}

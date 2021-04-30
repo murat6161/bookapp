@@ -1,11 +1,11 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 
 const BookList = (props) => {
   return (
     <div className="row">
-      {props.books.map((book) => (
-        <div className="col-lg-4" key={book.url}>
+      {props.books.map((book, i) => (
+        <div className="col-lg-6" key={i}>
           <div className="card mb-4 shadow-sm">
             {/* <img src={{}} alt="Sample Book" className="card-img-top"/> */}
             <div className="card-body">
@@ -19,19 +19,23 @@ const BookList = (props) => {
               <p className="card-text">{book.summary}</p>
 
               <div className="d-flex justify-content-between align-items-center">
-              
-
-                <a href={book.url} target="_blank">
-          
+                <a href={book.url} target="_blank" rel="noreferrer">
                   <button className="btn btn-md btn-info">About Book</button>
                 </a>
-                <button
+               
+
+                <Link
+                  to="/update"
                   type="button"
-                  onClick={() => props.deleteBookProp(book)}
-                  className="btn btn-md btn-outline-danger"
+                  className="btn btn-md btn-success"
+                  style={{ marginTop: "20px", marginBottom: "20px" }}
                 >
-                  Delete
-                </button>
+                  Update Book
+                </Link>
+
+
+                
+
               </div>
               <br />
               <h6>
@@ -39,6 +43,14 @@ const BookList = (props) => {
                   Publication Date: {book.publication_dt}
                 </span>
               </h6>
+              <button
+                  type="button"
+                  onClick={() => props.deleteBookProp(book)}
+                  className="btn btn-md btn-outline-danger"
+                  style={{float:'right'}}
+                >
+                  Delete
+                </button>
             </div>
           </div>
         </div>
@@ -49,6 +61,4 @@ const BookList = (props) => {
 
 export default BookList;
 
-
-//<a href={book.url} target="_blank">
-//{" "}
+// {" "}
