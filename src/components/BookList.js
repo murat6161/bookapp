@@ -5,6 +5,9 @@ const BookList = (props) => {
   return (
     <div className="row">
       {props.books.map((book, i) => (
+
+   
+        
         <div className="col-lg-6" key={i}>
           <div className="card mb-4 shadow-sm">
             {/* <img src={{}} alt="Sample Book" className="card-img-top"/> */}
@@ -25,7 +28,7 @@ const BookList = (props) => {
                
 
                 <Link
-                  to="/update"
+                  to={`update/${book.id}`}
                   type="button"
                   className="btn btn-md btn-success"
                   style={{ marginTop: "20px", marginBottom: "20px" }}
@@ -57,6 +60,7 @@ const BookList = (props) => {
       ))}
     </div>
   );
+  
 };
 
 export default BookList;

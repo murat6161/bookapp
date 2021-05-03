@@ -1,18 +1,10 @@
 {
   "books": [
     {
-      "id": "3",
-      "url": "http://www.nytimes.com/1993/10/24/books/in-short-fiction-284093.html",
-      "publication_dt": "1993-10-24",
-      "byline": "RICHARD E. NICHOLLS",
       "book_title": "Nightmares and Dreamscapes",
-      "book_author": "Stephen King",
-      "summary": "",
-      "uuid": "00000000-0000-0000-0000-000000000000",
-      "uri": "nyt://book/00000000-0000-0000-0000-000000000000",
-      "isbn13": [
-        "9781441615299"
-      ]
+      "summary": "Stephen King Books......... Good Books...",
+      "url": "http://www.nytimes.com/1993/10/24/books/in-short-fiction-284093.html",
+      "id": "3"
     },
     {
       "id": "4",
@@ -43,18 +35,11 @@
       ]
     },
     {
-      "id": "6",
-      "url": "http://www.nytimes.com/1991/10/20/books/l-defending-stephen-king-075091.html",
-      "publication_dt": "1991-10-20",
-      "byline": "",
       "book_title": "Needful Things",
-      "book_author": "Stephen King",
-      "summary": "",
-      "uuid": "00000000-0000-0000-0000-000000000000",
-      "uri": "nyt://book/00000000-0000-0000-0000-000000000000",
-      "isbn13": [
-        "9781598877427"
-      ]
+      "author": "Stephen King",
+      "summary": "A GOOD BOOK",
+      "url": "http://www.nytimes.com/1991/10/20/books/l-defending-stephen-king-075091.html",
+      "id": "6"
     },
     {
       "id": "7",
@@ -403,20 +388,6 @@
       ]
     },
     {
-      "id": "31",
-      "url": "http://www.nytimes.com/1982/08/29/books/horror-writer-s-holiday.html",
-      "publication_dt": "1982-08-29",
-      "byline": "ALAN CHEUSE",
-      "book_title": "Different Seasons",
-      "book_author": "Stephen King",
-      "summary": "",
-      "uuid": "00000000-0000-0000-0000-000000000000",
-      "uri": "nyt://book/00000000-0000-0000-0000-000000000000",
-      "isbn13": [
-        "9780670272662"
-      ]
-    },
-    {
       "id": "32",
       "url": "http://www.nytimes.com/1983/04/03/books/the-other-woman-was-a-car.html",
       "publication_dt": "1983-04-03",
@@ -657,35 +628,6 @@
       ]
     },
     {
-      "id": "50",
-      "url": "http://www.nytimes.com/2000/10/05/books/books-of-the-times-how-to-write-if-you-re-stephen-king.html",
-      "publication_dt": "2000-10-05",
-      "byline": "JANET MASLIN",
-      "book_title": "On Writing:  a Memoir of the Craft",
-      "book_author": "Stephen King",
-      "summary": "",
-      "uuid": "00000000-0000-0000-0000-000000000000",
-      "uri": "nyt://book/00000000-0000-0000-0000-000000000000",
-      "isbn13": [
-        "9780606222549",
-        "9780606231862",
-        "9780671024253",
-        "9780684853529",
-        "9780743204361",
-        "9780743211536",
-        "9780743455961",
-        "9780743563376",
-        "9781416549864",
-        "9781417647019",
-        "9781439156810",
-        "9781439193631",
-        "9781441658869",
-        "9781444723250",
-        "9781848941083",
-        "9781931208048"
-      ]
-    },
-    {
       "id": "51",
       "url": "http://www.nytimes.com/2000/10/08/books/making-it.html",
       "publication_dt": "2000-10-08",
@@ -712,48 +654,6 @@
         "9781444723250",
         "9781848941083",
         "9781931208048"
-      ]
-    },
-    {
-      "id": "52",
-      "url": "http://www.nytimes.com/2001/03/15/books/books-of-the-times-a-fateful-step-off-a-curb-and-into-alien-territory.html",
-      "publication_dt": "2001-03-15",
-      "byline": "JANET MASLIN",
-      "book_title": "Dreamcatcher",
-      "book_author": "Stephen King",
-      "summary": "",
-      "uuid": "00000000-0000-0000-0000-000000000000",
-      "uri": "nyt://book/00000000-0000-0000-0000-000000000000",
-      "isbn13": [
-        "9780743211383"
-      ]
-    },
-    {
-      "id": "53",
-      "url": "http://www.nytimes.com/2001/04/15/books/weasel-from-another-planet.html",
-      "publication_dt": "2001-04-15",
-      "byline": "COLIN HARRISON",
-      "book_title": "Dreamcatcher",
-      "book_author": "Stephen King",
-      "summary": "",
-      "uuid": "00000000-0000-0000-0000-000000000000",
-      "uri": "nyt://book/00000000-0000-0000-0000-000000000000",
-      "isbn13": [
-        "9780743211383"
-      ]
-    },
-    {
-      "id": "54",
-      "url": "http://www.nytimes.com/2002/09/23/books/books-of-the-times-cruising-the-dark-side-forget-about-seat-belts.html",
-      "publication_dt": "2002-09-23",
-      "byline": "JANET MASLIN",
-      "book_title": "From a Buick 8",
-      "book_author": "Stephen King",
-      "summary": "",
-      "uuid": "00000000-0000-0000-0000-000000000000",
-      "uri": "nyt://book/00000000-0000-0000-0000-000000000000",
-      "isbn13": [
-        "9780743211376"
       ]
     },
     {
@@ -789,20 +689,6 @@
       "url": "http://www.nytimes.com/2006/01/23/books/23masl.html",
       "publication_dt": "2006-01-23",
       "byline": "JANET MASLIN",
-      "book_title": "Cell",
-      "book_author": "Stephen King",
-      "summary": "",
-      "uuid": "00000000-0000-0000-0000-000000000000",
-      "uri": "nyt://book/00000000-0000-0000-0000-000000000000",
-      "isbn13": [
-        "9780743292337"
-      ]
-    },
-    {
-      "id": "58",
-      "url": "http://www.nytimes.com/2006/02/05/books/review/05itzkoff.html",
-      "publication_dt": "2006-02-05",
-      "byline": "DAVE ITZKOFF",
       "book_title": "Cell",
       "book_author": "Stephen King",
       "summary": "",
@@ -910,8 +796,8 @@
       "author": "Orhan Pamuk",
       "url": "https://www.dr.com.tr/Kitap/1984/Edebiyat/Roman/Dunya-Roman/urunno=0000000064038",
       "publication_dt": "2021",
-      "summary": "Orhan Pamuk’un üzerinde 5 yıldır çalıştığı “Veba Geceleri”, 1901 yılında 3. Veba Pandemisi döneminde Osmanlı’nın 29. Vilayeti Minger adasında geçiyor.",
-      "id": "3wIUsTp"
+      "summary": "Pamuk Books",
+      "id": "Ns9OAx1"
     }
   ]
 }

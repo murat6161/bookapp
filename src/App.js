@@ -8,6 +8,7 @@ import AddBook from "./components/AddBook";
 import UpdateBook from "./components/UpdateBook";
 import AddButton from "./components/AddButton";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import PageButton from "./components/PageButton"
 
 class App extends React.Component {
   state = {
@@ -23,31 +24,34 @@ class App extends React.Component {
     books: [],
 
     findBooks: "",
-    author: "",
+    author: "Stephen King",
   };
 
   //API-KEY
-  //  async componentDidMount() {
-  //    const response = await axios.get("https://api.nytimes.com/svc/books/v3/reviews.json?author=Stephen+King&api-key=8xzemOIdqbZoHoEbX6OGpUDGhL5MxBtt")
-  //    console.log("response",response.data.results)
-  //    this.setState({books: response.data.results})
+    //  async componentDidMount() {
+    //    const response = await axios.get(`https://api.nytimes.com/svc/books/v3/reviews.json?author=${this.state.author}&api-key=8xzemOIdqbZoHoEbX6OGpUDGhL5MxBtt`)
+    //    console.log("response",response.data.results)
+    //    this.setState({books: response.data.results})
+    //  }
+
+  //   async componentDidUpdate() {
+  //      const response = await axios.get(`https://api.nytimes.com/svc/books/v3/reviews.json?author=${this.state.author}&api-key=8xzemOIdqbZoHoEbX6OGpUDGhL5MxBtt`)
+  //      console.log("response",response.data.results)
+  //      this.setState({books: response.data.results})
   //  }
 
-  //  async componentDidUpdate() {
-  //     const response = await axios.get(`https://api.nytimes.com/svc/books/v3/reviews.json?author=${this.state.author}&api-key=8xzemOIdqbZoHoEbX6OGpUDGhL5MxBtt`)
-  //     console.log("response",response.data.results)
-  //     this.setState({books: response.data.results})
-  // }
-
   //JSON-SERVER
-    async componentDidMount() {
-      const response = await axios.get("http://localhost:3002/books");
-     // console.log("response", response);
-     // console.log("response data title:", response.data[1].book_title);
-      this.setState({ books: response.data });
-     // console.log("books", this.state.books);
+     async componentDidMount() {
+       // const response = await axios.get("http://localhost:3002/books");
+       // this.setState({ books: response.data }); 
+       this.getMovies()
+     }
 
+    async getMovies() {
+      const response = await axios.get("http://localhost:3002/books");
+      this.setState({ books: response.data }); 
     }
+  
 
   //**********************************************************************/
 
@@ -69,9 +73,10 @@ class App extends React.Component {
   //**********************************************************************/
 
   findAuthor = (e) => {
-    this.setState({
-      author: e.target.value,
-    });
+    console.log("author:", this.state.author)
+    setTimeout(() => this.setState({author: e.target.value}), 3000);
+    console.log("author2 :", this.state.author)
+    
   };
 
   //**********************************************************************/
@@ -79,7 +84,8 @@ class App extends React.Component {
      addBook = async (book) => {
        await axios.post(`http://localhost:3002/books/`, book)
        this.setState(state => ({ books: state.books.concat([book])}))
-       alert("New Book Added");
+       //alert("New Book Added");
+       this.getMovies()
 
      };
 
@@ -93,8 +99,11 @@ class App extends React.Component {
 
   //**********************************************************************/
 
-  updateBook = () => {
-    alert("Book Updated");
+  updateBook = async (id, updatedBook) => {
+    await axios.put(`http://localhost:3002/books/${id}`, updatedBook)
+    
+    //alert("Book Updated");
+    this.getMovies()
   };
 
   //**********************************************************************/
@@ -126,6 +135,8 @@ class App extends React.Component {
                     </div>
                   </div>
                   <AddButton />
+                  <PageButton />
+                  
 
                   <BookList
                     books={filterBooks}
@@ -147,17 +158,26 @@ class App extends React.Component {
               )}
             ></Route>
 
-            <Route
-              path="/update"
-              render={({ history }) => (
-                <UpdateBook
-                  onUpdateBook={(book) => {
-                    this.updateBook();
-                    history.push("/");
-                  }}
+          <Route
+             path="/update/:id" render={(props)=>(
+            
+                <UpdateBook {...props}
+                  onUpdateBook={(id, book) => {
+                    this.updateBook(id, book);
+                
+                  }
+                }
                 />
-              )}
+             )}
+
+              
+             
             ></Route>
+
+
+              
+
+           
           </Switch>
         </div>
       </BrowserRouter>
