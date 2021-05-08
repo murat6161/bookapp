@@ -1,3 +1,19 @@
+# bookapp PROJECT
+yarn add axios
+yarn add json-server
+yarn json-server --watch src/api/book.json --port 3002
+
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+
+yarn add react-router-dom
+yarn add form-serialize
+
+# Bootstrap Linki
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+
+   
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

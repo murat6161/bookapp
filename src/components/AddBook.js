@@ -1,12 +1,14 @@
 import React, { Component } from "react";
-import serialize from 'form-serialize'
+import serialize from "form-serialize";
 
 export default class AddBook extends Component {
-    handleFormSubmit = (e) => {
-        e.preventDefault();
-        const newBook = serialize(e.target, {hash: true})
-        this.props.onAddBook(newBook)
-    }
+
+  handleFormSubmit = (e) => {
+    e.preventDefault();
+    const newBook = serialize(e.target, { hash: true });
+    this.props.onAddBook(newBook);
+  };
+
   render() {
     return (
       <div className="container">
@@ -45,8 +47,9 @@ export default class AddBook extends Component {
               />
             </div>
           </div>
+
           <div className="form-row">
-            <div className="form-group col-md-12">
+            <div className="form-group col-md-11">
               <label htmlFor="overviewTextarea">Summary</label>
               <textarea
                 className="form-control"
@@ -55,6 +58,7 @@ export default class AddBook extends Component {
               ></textarea>
             </div>
           </div>
+
           <input
             type="submit"
             className="btn btn-danger btn-block col-2"
@@ -65,3 +69,5 @@ export default class AddBook extends Component {
     );
   }
 }
+
+

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {Component} from "react";
 import BookList from "./components/BookList";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import SearchBook from "./components/SearchBook";
@@ -8,61 +8,66 @@ import AddBook from "./components/AddBook";
 import UpdateBook from "./components/UpdateBook";
 import AddButton from "./components/AddButton";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import PageButton from "./components/PageButton"
+import ThemeContextProvider from "./context/ThemeContext";
 
-class App extends React.Component {
+class App extends Component {
   state = {
-
-      // MANUEL
-      //  books : [
-      //      {id:1, isbn : "536727151", book_title : "Sefiller", book_author : "Victor Hugo", summary : "English", publication_dt : "1950", url : "http://kbimages1-a.akamaihd.net/Images/6faa402f-1a95-4897-93ff-8286cbe0e94f/255/400/False/image.jpg"},
-      //      {id:2, isbn : "647252132", book_title : "Hayvanlar Ciftligi", book_author : "George Orwell", summary : "Turkish", publication_dt : "1936", url : "https://img.kitapyurdu.com/v1/getImage/fn:11346129/wh:true/miw:200/mih:200"},
-      //      {id:3, isbn : "785932635", book_title : "1984", book_author : "George Orwell", summary : "English", publication_dt : "1942", url : "https://i.dr.com.tr/cache/600x600-0/originals/0000000064038-1.jpg"},
-      //      {id:4, isbn : "237890543", book_title : "Ince Memed", book_author : "Yasar Kemal", summary : "Turkish", publication_dt :  "1974", url : "https://cdn.kidega.com/product-images-opt/publication/97/89/75/9789750807145.png?v=2020-10-17"},
-      //      {id:5, isbn : "324567890", book_title : "GunesDamlasi", book_author : "Eleni Hacudi Tunta", summary : "Greek", publication_dt : "1984", url : "https://cdn03.ciceksepeti.com/cicek/kc8145444-1/S/gunesdamlasi-kc8145444-1-7fa726e9bde445df8e792d6f7c4b106a.jpg"}
-      //    ],
     books: [],
-
     findBooks: "",
     author: "Stephen King",
   };
 
-  //API-KEY
-    //  async componentDidMount() {
-    //    const response = await axios.get(`https://api.nytimes.com/svc/books/v3/reviews.json?author=${this.state.author}&api-key=8xzemOIdqbZoHoEbX6OGpUDGhL5MxBtt`)
-    //    console.log("response",response.data.results)
-    //    this.setState({books: response.data.results})
-    //  }
+  /*************************************************************************/
+  /*************************************************************************/
 
-  //   async componentDidUpdate() {
-  //      const response = await axios.get(`https://api.nytimes.com/svc/books/v3/reviews.json?author=${this.state.author}&api-key=8xzemOIdqbZoHoEbX6OGpUDGhL5MxBtt`)
-  //      console.log("response",response.data.results)
-  //      this.setState({books: response.data.results})
-  //  }
+  //API-KEY
+  async componentDidMount() {
+   // this.getBooks();
+  }
+
+  //API Key
+  async getBooks() {
+    const response = await axios.get(
+      `https://api.nytimes.com/svc/books/v3/reviews.json?author=${this.state.author}&api-key=8xzemOIdqbZoHoEbX6OGpUDGhL5MxBtt`
+    );
+    this.setState({ books: response.data.results });
+  }
+
+  //API KEY
+  findAuthor = (e) => {
+    this.setState({ author: e.target.value });
+    setTimeout(() => this.getBooks(), 8000);
+  };
+
+  /*************************************************************************/
+  /*************************************************************************/
+
+  /*************************************************************************/
+  /*************************************************************************/
 
   //JSON-SERVER
-     async componentDidMount() {
-       // const response = await axios.get("http://localhost:3002/books");
-       // this.setState({ books: response.data }); 
-       this.getMovies()
-     }
+   async componentDidMount() {
+     this.getBookss();
+   }
 
-    async getMovies() {
-      const response = await axios.get("http://localhost:3002/books");
-      this.setState({ books: response.data }); 
-    }
-  
+  // //JSON SERVER
+   async getBookss() {
+     const response = await axios.get("http://localhost:3002/books");
+     this.setState({ books: response.data });
+   }
 
-  //**********************************************************************/
+  //**********************************************************************//
+  //**********************************************************************//
 
   deleteBook = async (book) => {
-
     axios.delete(`http://localhost:3002/books/${book.id}`);
-    const newBooks = this.state.books.filter((b) => b.id !== book.id);
+    const newBooks = this.state.books.filter(
+      (element) => element.id !== book.id
+    );
     this.setState((state) => ({ books: newBooks }));
   };
 
-  //**********************************************************************/
+  //**********************************************************************//
 
   findBook = (e) => {
     this.setState({
@@ -70,54 +75,30 @@ class App extends React.Component {
     });
   };
 
-  //**********************************************************************/
+  //**********************************************************************//
 
-  findAuthor = (e) => {
-    console.log("author:", this.state.author)
-    setTimeout(() => this.setState({author: e.target.value}), 3000);
-    console.log("author2 :", this.state.author)
-    
-  };
-
-  //**********************************************************************/
-
-     addBook = async (book) => {
-       await axios.post(`http://localhost:3002/books/`, book)
-       this.setState(state => ({ books: state.books.concat([book])}))
-       //alert("New Book Added");
-       this.getMovies()
-
-     };
-
-  //   addBook = (book) => {
-
-  //  this.setState(state => ({ books: state.books.concat([book])}))  
-    
-  //     alert("New Book Added");
-
-  //   };
-
-  //**********************************************************************/
-
-  updateBook = async (id, updatedBook) => {
-    await axios.put(`http://localhost:3002/books/${id}`, updatedBook)
-    
-    //alert("Book Updated");
-    this.getMovies()
+  addBook = async (book) => {
+    if (!book.book_title) {
+      alert("Enter a Book name");
+    } else {
+      await axios.post(`http://localhost:3002/books/`, book);
+      this.setState((state) => ({ books: state.books.concat([book]) }));
+      alert("New Book Added");
+      this.getBookss();
+    }
   };
 
   //**********************************************************************/
 
   render() {
     let filterBooks = this.state.books.filter((book) => {
-
-      //console.log("book title:", book.book_title)
       return (
         book.book_title
           .toLowerCase()
           .indexOf(this.state.findBooks.toLowerCase()) !== -1
       );
     });
+
     return (
       <BrowserRouter>
         <div className="container">
@@ -129,19 +110,20 @@ class App extends React.Component {
                 <>
                   <div className="row">
                     <div className="col-lg-12">
-                      <SearchBook findBookProp={this.findBook} />
+                      <SearchBook findOneBook={this.findBook} />
 
-                      <SearchAuthor findAuthorProp={this.findAuthor} />
+                      <SearchAuthor findBookAuthor={this.findAuthor} />
                     </div>
                   </div>
-                  <AddButton />
-                  <PageButton />
-                  
 
-                  <BookList
-                    books={filterBooks}
-                    deleteBookProp={this.deleteBook}
-                  />
+                  <AddButton />
+
+                  <ThemeContextProvider>
+                    <BookList
+                      books={filterBooks}
+                      deleteBookProp={this.deleteBook}
+                    />
+                  </ThemeContextProvider>
                 </>
               )}
             ></Route>
@@ -152,32 +134,16 @@ class App extends React.Component {
                 <AddBook
                   onAddBook={(book) => {
                     this.addBook(book);
-                    history.push("/");
+
+                    if (book.book_title) {
+                      history.push("/");
+                    }
                   }}
                 />
               )}
             ></Route>
 
-          <Route
-             path="/update/:id" render={(props)=>(
-            
-                <UpdateBook {...props}
-                  onUpdateBook={(id, book) => {
-                    this.updateBook(id, book);
-                
-                  }
-                }
-                />
-             )}
-
-              
-             
-            ></Route>
-
-
-              
-
-           
+            <Route path="/update" component={UpdateBook}></Route>
           </Switch>
         </div>
       </BrowserRouter>

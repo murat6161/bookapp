@@ -1,63 +1,52 @@
 import React from "react";
 
 class PageButton extends React.Component {
+  state = {
+    pageStyle: "value",
+  };
 
-    state = {
+  clickHandle = async (e) => {
+    const num = await e.target.value;
 
-         pageStyle : "col-lg-6"
-    }
+    if (num === "2") this.setState({ pageStyle: "col-lg-6" });
+    if (num === "3") this.setState({ pageStyle: "col-lg-4" });
+    if (num === "4") this.setState({ pageStyle: "col-lg-3" });
+  };
 
-    clickHandle = async (e) => {
-       
-        const num =     await e.target.value
-        console.log("Number : ", e.target.value)
+  render() {
+    return (
+      <div>
+        <button
+          onClick={() => this.props.changeStyleProp("col-lg-6")}
+          type="button"
+          className="btn btn-md btn-primary col-1"
+          value="2"
+          style={{marginRight: "10px", marginBottom:"20px", marginTop:"20px"}}
+        >
+          2
+        </button>
 
-        if (num === "2") this.setState({ pageStyle : "col-lg-6"})
-        if (num === "3") this.setState({ pageStyle : "col-lg-4"})
-        if (num === "4") this.setState({ pageStyle : "col-lg-3"})
-        
+        <button
+          onClick={() => this.props.changeStyleProp("col-lg-4")}
+          type="button"
+          className="btn btn-md btn-primary col-1"
+          value="3"
+          style={{marginRight: "10px"}}
+        >
+          3
+        </button>
 
-        console.log("Page Style : ", this.state.pageStyle)
-
-    }
-
-    render(){
-  return (
-    <div>
-      <button
-    
-       onClick={this.clickHandle}
-        type="button"
-       
-        className="btn btn-md btn-primary col-2"
-        value = "2"
-        //style={{marginTop: '-50px', float:'right'}}
-      >
-       IKI
-      </button>
-
-      <button
-       onClick={this.clickHandle}
-        type="button"
-        className="btn btn-md btn-primary col-2"
-        value="3"
-        //style={{marginTop: '-50px', float:'right'}}
-      >
-     UC
-      </button>
-
-      <button
-       onClick={this.clickHandle}
-        type="button"
-        className="btn btn-md btn-primary col-2"
-        //style={{marginTop: '-50px', float:'right'}}
-        value="4"
-      >
-        DORT
-      </button>
-    </div>
-  );
-}
+        <button
+          onClick={() => this.props.changeStyleProp("col-lg-3")}
+          type="button"
+          className="btn btn-md btn-primary col-1"
+          value="4"
+        >
+          4
+        </button>
+      </div>
+    );
+  }
 }
 
-export default PageButton
+export default PageButton;

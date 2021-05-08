@@ -1,40 +1,30 @@
 import React from "react";
 
-class SearchBook extends React.Component {
-  // state = {
-  //     findBook: ""
-  // }
 
-  // onChangeEvent = (e) => {
+const formSubmit = (e) => {
+  e.preventDefault();
+};
 
-  //     this.setState({
-  //         findBook: e.target.value
+const SearchBook = (props) => {
+ 
 
-  //     })
-  // }
-
-  formSubmit = (e) => {
-    e.preventDefault(); // Varsayilan Davranisi Durdurduk ve sayfa yenilemesi olmadi
-  };
-
-  render() {
+  
     return (
-      <form onSubmit={this.formSubmit}>
+      <form onSubmit={formSubmit} style={{marginTop:"20px"}}>
         <div className="form-row mb-5">
-          <div  className="col-6">
+          <div className="col-6">
             Search Book
             <input
-              onChange={this.props.findBookProp}
+              onChange={props.findOneBook}
               type="text"
               className="form-control"
               placeholder="Search Book With the Book Name"
-              // value={this.props.findBookProp}
             />
           </div>
         </div>
       </form>
     );
   }
-}
 
-export default SearchBook;
+
+export default SearchBook
